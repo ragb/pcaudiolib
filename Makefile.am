@@ -80,7 +80,7 @@ EXTRA_DIST += \
 # Mac OSX audio support
 if HAVE_COREAUDIO
 src_libpcaudio_la_SOURCES += \
-	src/coreaudio.c \
+	src/coreaudio.m \
 	src/TPCircularBuffer/TPCircularBuffer.c \
 	src/TPCircularBuffer/TPCircularBuffer.h \
 	src/TPCircularBuffer/TPCircularBuffer+AudioBufferList.c \

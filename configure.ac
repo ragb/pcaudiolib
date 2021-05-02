@@ -1,5 +1,5 @@
-AC_PREREQ([2.65])
-AC_INIT([pcaudiolib], [1.1], [https://github.com/rhdunn/pcaudiolib/issues], [], [https://github.com/rhdunn/pcaudiolib])
+AC_PREREQ([2.71])
+AC_INIT([pcaudiolib],[1.1],[https://github.com/rhdunn/pcaudiolib/issues],[],[https://github.com/rhdunn/pcaudiolib])
 AM_INIT_AUTOMAKE()
 
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES])
@@ -15,8 +15,9 @@ dnl Program checks.
 dnl ================================================================
 
 AC_PROG_CC
+AC_PROG_OBJC
 AC_PROG_MAKE_SET
-AC_PROG_LIBTOOL
+LT_INIT
 
 dnl ================================================================
 dnl PulseAudio checks.
